@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editable Content Example</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>豪沃聊啊</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .editable {
-            border: 1px solid #ccc;
-            padding: 10px;
-            min-height: 200px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      * {
+        border: 1px solid black;
+      }
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
     </style>
-</head>
-<body>
-    <h1>Editable Content Example</h1>
-    <div class="editable" contenteditable="true">
-        <p>Click here to edit this content...</p>
-        <p>You can type and modify this text.</p>
+  </head>
+  <body class="flex column">
+    <div
+      style="
+        height: 90px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #999;
+      "
+    ></div>
+    <div style="height: 900px; border: 1px solid red" class="flex">
+      <div style="width: 90px"></div>
+      <div style="flex: 1"></div>
+      <div style="width: 90px"></div>
     </div>
+
     <script>
-        // Enable editing for the entire body
-        document.body.contentEditable = true;
+      // Enable editing for the entire body
+      //document.body.contentEditable = true;
     </script>
-</body>
+  </body>
 </html>
