@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Content Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .editable {
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Editable Content Example</h1>
+    <div class="editable" contenteditable="true">
+        <p>Click here to edit this content...</p>
+        <p>You can type and modify this text.</p>
+    </div>
+    <script>
+        // Enable editing for the entire body
+        document.body.contentEditable = true;
+    </script>
+</body>
+</html>
